@@ -4,9 +4,14 @@
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-      "jasmine"
+      "jest",
+      "node"
     ]
   },
+  "files": [
+    "testing/setups/jest-angular.setup.ts",
+    "testing/setups/jest-dom.setup.ts",
+  ],
   "include": [
     "src/**/*.spec.ts",
     "src/**/*.d.ts"

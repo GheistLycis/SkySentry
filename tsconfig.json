@@ -25,7 +25,7 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
