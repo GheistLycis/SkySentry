@@ -9,12 +9,30 @@
       "preLaunchTask": "npm: start",
       "url": "http://localhost:4200/"
     },
+    // {
+    //   "name": "ng test",
+    //   "type": "chrome",
+    //   "request": "launch",
+    //   "preLaunchTask": "npm: test",
+    //   "url": "http://localhost:9876/debug.html"
+    // },
     {
-      "name": "ng test",
-      "type": "chrome",
+      "name": "vscode-jest-tests.v2",
+      "type": "node",
       "request": "launch",
-      "preLaunchTask": "npm: test",
-      "url": "http://localhost:9876/debug.html"
+      "args": [
+        "test",
+        "--",
+        "--runInBand",
+        "--watchAll=false",
+        "--testNamePattern",
+        "${jest.testNamePattern}",
+        "--runTestsByPath",
+        "${jest.testFile}"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "runtimeExecutable": "npm"
     }
   ]
 }

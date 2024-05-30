@@ -1,4 +1,11 @@
 {
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
-  "recommendations": ["angular.ng-template"]
+  "recommendations": [
+    "angular.ng-template",
+    "dbaeumer.vscode-eslint", // Eslint
+    "github.vscode-github-actions", // Github Actions
+    "esbenp.prettier-vscode", // Prettier
+    "orta.vscode-jest", // Jest
+    "yoavbls.pretty-ts-errors" // Pretty ts errors
+  ]
 }
