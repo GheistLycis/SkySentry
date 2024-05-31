@@ -9,7 +9,7 @@ EDIT_DESCRIPTION_HERE
 - [ ] New feature (change that adds new behavior(s))
 - [ ] Refactor (change that doesn't change any behaviors)
 - [ ] Chore (change that to config files only)
-​
+      ​
 
 # How has this been tested?
 

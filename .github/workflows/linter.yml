@@ -3,7 +3,7 @@ name: ESlint
 on: [pull_request]
 
 jobs:
-  linter: 
+  linter:
     runs-on: ubuntu-latest
 
     steps:
