@@ -6,7 +6,7 @@
     "build": "ng build",
     "test": "jest --coverage --config ./jest.config.ts",
     "prettier": "npx prettier --write .",
-    "eslint": "npx eslint --ext .ts",
+    "eslint": "npx eslint --ext .ts,.html --max-warnings=0",
     "commitlint": "npx commitlint --edit",
     "pre-commit": "npm run prettier && npm run eslint",
     "pre-push": "npm run commitlint",
