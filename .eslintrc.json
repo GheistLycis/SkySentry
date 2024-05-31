@@ -1,8 +1,7 @@
 {
   "plugins": ["@typescript-eslint"],
   "extends": [
-    "next/core-web-vitals",
-    "plugin:testing-library/react",
+    "plugin:testing-library/angular",
     "plugin:jest-dom/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
@@ -14,7 +13,7 @@
     "@typescript-eslint/no-explicit-any": "warn",
     "no-use-before-define": "off",
     "import/extensions": [
-      "error",
+      "warn",
       "ignorePackages",
       {
         "ts": "never"
