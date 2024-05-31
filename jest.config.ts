@@ -1,4 +1,4 @@
-import { Config } from 'jest';
+import { Config } from 'jest'
 
 const config: Config = {
   cacheDirectory: '<rootDir>/testing/cache',
@@ -7,7 +7,7 @@ const config: Config = {
   collectCoverageFrom: [
     '<rootDir>/src/app/**/*.{ts,html}',
     '!**/*.config.ts',
-    '!**/*.routes.ts',
+    '!**/*.routes.ts'
   ],
   coverageDirectory: '<rootDir>/testing/coverage',
   coverageThreshold: {
@@ -15,8 +15,8 @@ const config: Config = {
       branches: 90,
       functions: 90,
       lines: 90,
-      statements: 90,
-    },
+      statements: 90
+    }
   },
   globalSetup: 'jest-preset-angular/global-setup',
   maxWorkers: 1,
@@ -24,7 +24,7 @@ const config: Config = {
   preset: 'jest-preset-angular',
   setupFilesAfterEnv: [
     '<rootDir>/testing/setups/jest-angular.setup.ts',
-    '<rootDir>/testing/setups/jest-dom.setup.ts',
+    '<rootDir>/testing/setups/jest-dom.setup.ts'
   ],
   transform: {
     '^.+\\.(ts|js|html|svg)$': [
@@ -32,11 +32,11 @@ const config: Config = {
       {
         stringifyContentPathRegex: '\\.(html|svg)$',
         tsconfig: '<rootDir>/tsconfig.spec.json',
-        useESM: true,
-      },
-    ],
+        useESM: true
+      }
+    ]
   },
-  testEnvironment: 'jest-environment-jsdom',
-};
+  testEnvironment: 'jest-environment-jsdom'
+}
 
 module.exports = config as Config

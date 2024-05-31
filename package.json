@@ -2,23 +2,16 @@
   "name": "sky-sentry",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
     "test": "jest --coverage --config ./jest.config.ts",
-    "test:watch": "jest --watch",
     "prettier": "npx prettier --write .",
     "eslint": "npx eslint --ext .ts",
     "commitlint": "npx commitlint --edit",
+    "pre-push": "npm run prettier && npm run eslint && npm run commitlint",
     "prepare": "husky"
   },
   "private": true,
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm rum err && npm run prettier && npm run eslint && npm run commitlint"
-    }
-  },
   "dependencies": {
     "@angular/animations": "^18.0.0",
     "@angular/common": "^18.0.0",
