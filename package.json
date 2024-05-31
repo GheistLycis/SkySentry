@@ -16,7 +16,7 @@
   "private": true,
   "husky": {
     "hooks": {
-      "pre-commit": "npm rum er && npm run prettier && npm run eslint && npm run commitlint"
+      "pre-commit": "npm rum err && npm run prettier && npm run eslint && npm run commitlint"
     }
   },
   "dependencies": {
