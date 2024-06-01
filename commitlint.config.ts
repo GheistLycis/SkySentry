@@ -1,4 +1,4 @@
-import type { UserConfig } from '@commitlint/types'
+import { UserConfig } from '@commitlint/types'
 
 const config: UserConfig = {
   extends: ['@commitlint/config-conventional'],
@@ -6,9 +6,9 @@ const config: UserConfig = {
     'subject-case': [
       0,
       'never',
-      ['camel-case', 'pascal-case', 'kebab-case', 'snake-case']
-    ]
-  }
+      ['camel-case', 'pascal-case', 'kebab-case', 'snake-case'],
+    ],
+  },
 }
 
 export default config
