@@ -20,7 +20,12 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@d/*": ["./src/directives/*"],
+      "@f/*": ["./testing/fixtures/*"],
+      "@ic/*": ["./src/interceptors/*"],
+      "@if/*": ["./src/interfaces/*"],
+      "@p/*": ["./src/pipes/*"],
     },
     "types": ["node", "jest"]
   },
