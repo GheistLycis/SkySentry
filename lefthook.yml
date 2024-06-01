@@ -1,16 +1,10 @@
-pre-commit:
-  piped: true
-  follow: true
-  commands:
-    eslint:
-      run: npm run eslint
-    prettier:
-      run: npm run prettier
-    audit:
-      run: npm audit
-
 commit-msg:
+  piped: true
   follow: true
   commands:
     commitlint:
       run: npm run commitlint
+    eslint:
+      run: npm run eslint
+    prettier:
+      run: npm run prettier

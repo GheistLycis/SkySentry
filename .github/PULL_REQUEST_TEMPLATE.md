@@ -10,7 +10,6 @@ EDIT_DESCRIPTION_HERE
 - [ ] Refactor (doesn't change any behaviors)
 - [ ] Chore (alters config files only)
 
-
 ## How has this been tested?
 
 - [x] Unit Test
