@@ -1,12 +1,12 @@
 {
   "plugins": ["@typescript-eslint", "import"],
   "extends": [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/recommended",
+    "plugin:@angular-eslint/recommended",
+    "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
-    "plugin:prettier/recommended",
-    "plugin:testing-library/angular",
-    "prettier"
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
@@ -29,6 +29,14 @@
       }
     ],
     "max-len": ["off", { "code": 100 }],
-    "testing-library/no-unnecessary-act": "error"
+    "testing-library/no-unnecessary-act": "error",
+    "no-trailing-spaces": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".js"]
+      }
+    }
   }
 }
