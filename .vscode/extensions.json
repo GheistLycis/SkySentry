@@ -6,6 +6,7 @@
     "github.vscode-github-actions", // Github Actions
     "esbenp.prettier-vscode", // Prettier
     "orta.vscode-jest", // Jest
-    "yoavbls.pretty-ts-errors" // Pretty ts errors
+    "yoavbls.pretty-ts-errors", // Pretty ts errors
+    "ms-vscode.vscode-typescript-tslint-plugin" // TypeScript TSLint Plugin (if needed)
   ]
 }

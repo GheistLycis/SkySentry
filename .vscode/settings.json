@@ -2,15 +2,15 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
   },
+  "files.eol": "\n",
   "jest.runMode": "on-demand",
   "jest.coverageColors": {
     "uncovered": "rgba(255,99,71, 0.2)",
     "partially-covered": "rgba(255,215,0, 0.2)"
   },
-  "files.eol": "\n",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -20,7 +20,7 @@
     "editor.formatOnSave": true
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   }
 }

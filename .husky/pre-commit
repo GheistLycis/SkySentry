@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/_/h"
-
-npx commitlint -e "$1"
-npm run prettier
-npm run eslint
-npm audit

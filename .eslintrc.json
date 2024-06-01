@@ -1,7 +1,8 @@
 {
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "import"],
   "extends": [
-    "plugin:testing-library/angular",
+    "plugin:@angular-eslint/recommended",
+    "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
@@ -9,11 +10,11 @@
   ],
   "parser": "@typescript-eslint/parser",
   "rules": {
-    "@typescript-eslint/no-unused-vars": "warn",
-    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
     "no-use-before-define": "off",
     "import/extensions": [
-      "warn",
+      "error",
       "ignorePackages",
       {
         "ts": "never"
@@ -22,12 +23,20 @@
     "import/prefer-default-export": "off",
     "no-shadow": "off",
     "@typescript-eslint/explicit-function-return-type": [
-      "warn",
+      "error",
       {
         "allowExpressions": true
       }
     ],
     "max-len": ["off", { "code": 100 }],
-    "testing-library/no-unnecessary-act": "warn"
+    "testing-library/no-unnecessary-act": "error",
+    "no-trailing-spaces": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".js"]
+      }
+    }
   }
 }

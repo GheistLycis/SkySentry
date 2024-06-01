@@ -1,0 +1,10 @@
+commit-msg:
+  piped: true
+  follow: true
+  commands:
+    commitlint:
+      run: npm run commitlint
+    eslint:
+      run: npm run eslint
+    prettier:
+      run: npm run prettier
