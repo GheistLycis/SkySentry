@@ -25,7 +25,7 @@
       "@f/*": ["./testing/fixtures/*"],
       "@ic/*": ["./src/interceptors/*"],
       "@if/*": ["./src/interfaces/*"],
-      "@p/*": ["./src/pipes/*"],
+      "@p/*": ["./src/pipes/*"]
     },
     "types": ["node", "jest"]
   },

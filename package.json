@@ -5,11 +5,9 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "jest --coverage --config ./jest.config.ts",
+    "commitlint": "npx commitlint -e",
     "prettier": "npx prettier --write .",
     "eslint": "npx eslint --ext .ts,.html --max-warnings=0",
-    "commitlint": "npx commitlint --edit",
-    "pre-commit": "npm run prettier && npm run eslint",
-    "pre-push": "npm run commitlint",
     "prepare": "husky"
   },
   "private": true,
