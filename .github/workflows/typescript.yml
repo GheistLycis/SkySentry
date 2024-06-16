@@ -26,4 +26,4 @@ jobs:
         run: npm ci
 
       - name: TypeScript Compiler check
-        run: npm tsc
+        run: npm run tsc
