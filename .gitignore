@@ -44,3 +44,6 @@ Thumbs.db
 # Tests
 testing/cache
 testing/coverage
+
+# ngxtension
+.nx/cache

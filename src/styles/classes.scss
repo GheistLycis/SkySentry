@@ -1,0 +1,91 @@
+// COLORS
+@each $alias, $color in $palette {
+  .text-#{$alias} {
+    color: $color;
+  }
+
+  .bg-#{$alias} {
+    background-color: $color;
+  }
+}
+
+// SPACING
+@each $prop, $alias in $props {
+  @each $size in $sizes {
+    @if $prop == 'gap' {
+      .#{$alias}-#{$size} {
+        #{$prop}: #{$size}px;
+      }
+    } @else {
+      .#{$alias}-#{$size} {
+        #{$prop}: #{$size}px;
+      }
+      .#{$alias}x-#{$size} {
+        #{$prop}-left: #{$size}px;
+        #{$prop}-right: #{$size}px;
+      }
+      .#{$alias}y-#{$size} {
+        #{$prop}-top: #{$size}px;
+        #{$prop}-bottom: #{$size}px;
+      }
+      .#{$alias}l-#{$size} {
+        #{$prop}-left: #{$size}px;
+      }
+      .#{$alias}r-#{$size} {
+        #{$prop}-right: #{$size}px;
+      }
+      .#{$alias}t-#{$size} {
+        #{$prop}-top: #{$size}px;
+      }
+      .#{$alias}b-#{$size} {
+        #{$prop}-bottom: #{$size}px;
+      }
+    }
+  }
+}
+
+// TEXT
+@each $alias, $weight in $font-weights {
+  .fw-#{$alias} {
+    font-weight: $weight;
+  }
+}
+
+@each $size in $sizes {
+  .fs-#{$size} {
+    font-size: #{$size}px;
+  }
+}
+
+// FLEX BOX
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@each $position in center, start, end {
+  .justify-#{$position} {
+    justify-content: $position;
+  }
+  .align-#{$position} {
+    align-content: $position;
+  }
+}
+
+// GENERAL
+@each $alias, $ratio in $ratios {
+  .w-#{$alias} {
+    width: $ratio;
+  }
+  .h-#{$alias} {
+    height: $ratio;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}

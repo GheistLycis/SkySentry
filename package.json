@@ -4,10 +4,11 @@
   "scripts": {
     "start": "ng serve",
     "build": "ng build",
-    "test": "jest --coverage --config ./jest.config.ts",
     "commitlint": "npx commitlint -e",
     "eslint": "npx eslint . --max-warnings=0",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "test": "npx jest --coverage --config ./jest.config.ts",
+    "tsc": "npx tsc --noEmit"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +20,9 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "ngxtension": "^3.4.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

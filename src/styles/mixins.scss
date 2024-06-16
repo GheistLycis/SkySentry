@@ -1,0 +1,17 @@
+@mixin glass($color, $alpha, $blur) {
+  background: rgba($color, $alpha);
+  backdrop-filter: blur($blur);
+}
+
+@mixin fade-in($duration: 0.2s, $delay: 0s) {
+  opacity: 0;
+  transform: translateX(-15px);
+  animation: $duration ease-in $delay forwards fade-in;
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

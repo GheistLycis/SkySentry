@@ -11,6 +11,10 @@
     "uncovered": "rgba(255,99,71, 0.2)",
     "partially-covered": "rgba(255,215,0, 0.2)"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
