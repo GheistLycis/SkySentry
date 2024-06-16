@@ -3,7 +3,7 @@ name: Audit
 on: [pull_request]
 
 jobs:
-  audit:
+  npm-audit:
     runs-on: ubuntu-latest
 
     steps:
