@@ -1,9 +1,9 @@
-name: ESlint
+name: Linter
 
 on: [pull_request]
 
 jobs:
-  linter:
+  eslint:
     runs-on: ubuntu-latest
 
     steps:

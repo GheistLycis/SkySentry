@@ -3,7 +3,7 @@ name: EOL Check
 on: [pull_request]
 
 jobs:
-  audit:
+  dos2unix:
     runs-on: ubuntu-latest
 
     steps:

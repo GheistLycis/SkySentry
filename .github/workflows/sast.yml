@@ -1,4 +1,4 @@
-name: Bearer
+name: SAST
 
 on: [pull_request]
 
@@ -6,7 +6,7 @@ permissions:
   contents: read
 
 jobs:
-  sast:
+  bearer:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
