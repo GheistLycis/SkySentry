@@ -1,0 +1,20 @@
+name: EOL Check
+
+on: [pull_request]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout to code
+      - name: Check-out to source code
+        uses: actions/checkout@v4.1.1
+
+      # Setup No
+      - name: Install dos2unix
+        run: sudo apt install dos2unix
+
+      # Setup Node as latest
+      - name: Convert line endings to LF
+        run: find . -type f -exec dos2unix {} +
