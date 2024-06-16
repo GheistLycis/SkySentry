@@ -46,4 +46,4 @@ testing/cache
 testing/coverage
 
 # ngxtension
-.nx/cache/
+.nx/cache

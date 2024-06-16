@@ -7,7 +7,7 @@
     "commitlint": "npx commitlint -e",
     "eslint": "npx eslint . --max-warnings=0",
     "prettier": "npx prettier --write .",
-    "test": "jest --coverage --config ./jest.config.ts",
+    "test": "npx jest --coverage --config ./jest.config.ts",
     "tsc": "npx tsc --noEmit"
   },
   "private": true,
