@@ -1,4 +1,3 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -20,12 +19,14 @@
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"],
     "paths": {
-      "@/*": ["./*"],
-      "@d/*": ["./src/directives/*"],
+      "@/*": ["./src/app/*"],
+      "@d/*": ["./src/app/directives/*"],
       "@f/*": ["./testing/fixtures/*"],
-      "@ic/*": ["./src/interceptors/*"],
-      "@if/*": ["./src/interfaces/*"],
-      "@p/*": ["./src/pipes/*"]
+      "@g/*": ["./testing/guards/*"],
+      "@ic/*": ["./src/app/interceptors/*"],
+      "@if/*": ["./src/app/interfaces/*"],
+      "@p/*": ["./src/app/pipes/*"],
+      "@s/*": ["./src/app/services/*"]
     },
     "types": ["node", "jest"]
   },

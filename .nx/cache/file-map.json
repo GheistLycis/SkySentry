@@ -1,0 +1,256 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.3.5",
+  "deps": {
+    "@angular/animations": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/platform-browser-dynamic": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "ngxtension": "^3.4.0",
+    "primeicons": "^7.0.0",
+    "primeng": "^17.18.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "^18.0.2",
+    "@angular-eslint/eslint-plugin": "^18.0.1",
+    "@angular/cli": "^18.0.2",
+    "@angular/compiler-cli": "^18.0.0",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/format": "^19.3.0",
+    "@testing-library/angular": "^16.0.0",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.13",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "eslint": "^8.57.0",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest-dom": "^5.4.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-testing-library": "^6.2.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-preset-angular": "^14.1.0",
+    "lefthook": "^1.6.14",
+    "prettier": "^3.2.5",
+    "ts-jest": "^29.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.4.2"
+  },
+  "pathMappings": {
+    "@/*": [
+      "./src/app/*"
+    ],
+    "@d/*": [
+      "./src/app/directives/*"
+    ],
+    "@f/*": [
+      "./testing/fixtures/*"
+    ],
+    "@g/*": [
+      "./testing/guards/*"
+    ],
+    "@ic/*": [
+      "./src/app/interceptors/*"
+    ],
+    "@if/*": [
+      "./src/app/interfaces/*"
+    ],
+    "@p/*": [
+      "./src/app/pipes/*"
+    ],
+    "@s/*": [
+      "./src/app/services/*"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "17241496168097493888"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "9608002289452001365"
+      },
+      {
+        "file": ".github/PULL_REQUEST_TEMPLATE.md",
+        "hash": "10245269353152274570"
+      },
+      {
+        "file": ".github/workflows/audit.yml",
+        "hash": "593902795107841184"
+      },
+      {
+        "file": ".github/workflows/linter.yml",
+        "hash": "14047417555146611603"
+      },
+      {
+        "file": ".github/workflows/sast.yml",
+        "hash": "7848440556427292856"
+      },
+      {
+        "file": ".github/workflows/test.yml",
+        "hash": "16026583049088909835"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "2029217114549415375"
+      },
+      {
+        "file": ".husky/_/commit-msg",
+        "hash": "4700654298815958463"
+      },
+      {
+        "file": ".husky/_/pre-commit",
+        "hash": "4852761066919116615"
+      },
+      {
+        "file": ".husky/_/prepare-commit-msg",
+        "hash": "18338688995978181685"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "5477449351322414102"
+      },
+      {
+        "file": ".prettierrc.json",
+        "hash": "16982577018284095766"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "3444402199813412760"
+      },
+      {
+        "file": ".vscode/launch.json",
+        "hash": "680462714792674761"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "6774605522479826060"
+      },
+      {
+        "file": ".vscode/tasks.json",
+        "hash": "5336636969995539451"
+      },
+      {
+        "file": "README.md",
+        "hash": "11584307470393930754"
+      },
+      {
+        "file": "angular.json",
+        "hash": "12840311241133832913"
+      },
+      {
+        "file": "commitlint.config.ts",
+        "hash": "18017102681997516686"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "5852763800087144742"
+      },
+      {
+        "file": "lefthook.yml",
+        "hash": "15936578253203549099"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "10517358087541050661"
+      },
+      {
+        "file": "package.json",
+        "hash": "5290030455952409519"
+      },
+      {
+        "file": "public/favicon.ico",
+        "hash": "3988961587069885523"
+      },
+      {
+        "file": "src/app/app.component.html",
+        "hash": "11073038635692774106"
+      },
+      {
+        "file": "src/app/app.component.scss",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "src/app/app.component.spec.ts",
+        "hash": "16118655819810035128"
+      },
+      {
+        "file": "src/app/app.component.ts",
+        "hash": "11849482518177659592"
+      },
+      {
+        "file": "src/app/app.config.ts",
+        "hash": "18070669166271468976"
+      },
+      {
+        "file": "src/app/app.routes.ts",
+        "hash": "12025505205697284453"
+      },
+      {
+        "file": "src/app/services/theme/theme.service.spec.ts",
+        "hash": "10319448396502512847"
+      },
+      {
+        "file": "src/app/services/theme/theme.service.ts",
+        "hash": "13743326118302057630"
+      },
+      {
+        "file": "src/index.html",
+        "hash": "12676665981895944314"
+      },
+      {
+        "file": "src/main.ts",
+        "hash": "13120439988618059661"
+      },
+      {
+        "file": "src/styles/classes.scss",
+        "hash": "16823798529578226835"
+      },
+      {
+        "file": "src/styles/global.scss",
+        "hash": "9415317665313728840"
+      },
+      {
+        "file": "src/styles/mixins.scss",
+        "hash": "10056149448134209861"
+      },
+      {
+        "file": "src/styles/variables.scss",
+        "hash": "5472018830333852673"
+      },
+      {
+        "file": "testing/setups/jest-angular.setup.ts",
+        "hash": "10230766297440920453"
+      },
+      {
+        "file": "testing/setups/jest-dom.setup.ts",
+        "hash": "18244793749264894043"
+      },
+      {
+        "file": "tsconfig.app.json",
+        "hash": "11674506502668556549"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "18349291307433807454"
+      },
+      {
+        "file": "tsconfig.spec.json",
+        "hash": "7008567686469633945"
+      }
+    ]
+  }
+}

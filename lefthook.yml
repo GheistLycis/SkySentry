@@ -8,3 +8,5 @@ commit-msg:
       run: npm run eslint
     prettier:
       run: npm run prettier
+    tsc:
+      run: npm run tsc
