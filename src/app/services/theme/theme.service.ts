@@ -1,18 +1,15 @@
-import { WritableSignal, signal } from '@angular/core'
-import { createInjectable } from 'ngxtension/create-injectable'
+import { Injectable, signal } from '@angular/core'
 
-export const ThemeService = createInjectable(() => {
-  const theme: WritableSignal<'light' | 'dark'> = signal('light')
+@Injectable({ providedIn: 'root' })
+export class ThemeService {
+  theme = signal<'light' | 'dark'>('light')
 
-  const toggleTheme = (): void => {
+  constructor() {}
+
+  toggleTheme(): void {
     const themeLink = document.getElementById('app-theme') as HTMLLinkElement
 
-    theme.set(theme() == 'light' ? 'dark' : 'light')
-    themeLink.href = `${theme()}-theme.css`
+    this.theme.set(this.theme() == 'light' ? 'dark' : 'light')
+    themeLink.href = `${this.theme()}-theme.css`
   }
-
-  return {
-    theme,
-    toggleTheme,
-  }
-})
+}
