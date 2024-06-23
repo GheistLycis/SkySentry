@@ -72,7 +72,7 @@
     justify-content: $position;
   }
   .align-#{$position} {
-    align-content: $position;
+    align-items: $position;
   }
 }
 
@@ -88,4 +88,8 @@
 
 .pointer {
   cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
 }
