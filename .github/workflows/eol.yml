@@ -11,10 +11,10 @@ jobs:
       - name: Check-out to source code
         uses: actions/checkout@v4.1.1
 
-      # Setup No
+      # Setup dos2unix
       - name: Install dos2unix
         run: sudo apt install dos2unix
 
-      # Setup Node as latest
+      # Replace every CRLF with LF
       - name: Convert line endings to LF
         run: find . -type f -exec dos2unix {} +

@@ -1,0 +1,23 @@
+<p-sidebar [(visible)]="sidebarIsOpen"> OI </p-sidebar>
+
+<p-card>
+  <div class="flex g-6 align-center w-25">
+    <p-inputSwitch
+      (onChange)="themeService.theme.set($event.checked ? 'dark' : 'light')"
+    />
+    <i
+      class="pi pi-spin mb-2"
+      [ngClass]="{
+        'pi-sun': themeService.theme() == 'light',
+        'pi-moon': themeService.theme() == 'dark'
+      }"
+    ></i>
+  </div>
+</p-card>
+
+<p
+  (click)="sidebarIsOpen.set(!sidebarIsOpen())"
+  class="pointer ml-10"
+>
+  Toggle sidebar
+</p>
